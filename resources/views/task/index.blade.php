@@ -8,14 +8,14 @@
                 <!-- New Task -->
                 <div class="card">
                     <div class="card-header">
-                        {{ trans('viewTask.new') }}
+                        @lang('viewTask.new')
                     </div>
 
                     <div class="card-body">
 
                         <!-- Task Name -->
                         <div class="form-group">
-                            <label for="task-name" class="col-sm-3 control-label">{{ trans('viewTask.task') }}</label>
+                            <label for="task-name" class="col-sm-3 control-label">@lang('viewTask.task')</label>
 
                             <div class="col-sm-6">
                                 <input type="text" name="name" id="task-name" class="form-control">
@@ -26,7 +26,7 @@
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-6">
                                 <button type="submit" class="btn btn-light">
-                                    <i class="fa fa-btn fa-plus"></i> {{ trans('action.add').' '.trans('viewTask.task') }}
+                                    <i class="fa fa-btn fa-plus"></i> @lang('action.add').' '.@lang('viewTask.task')
                                 </button>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                 <!-- Current Tasks -->
                 <div class="card">
                     <div class="card-header">
-                        {{ trans('viewTask.current') }}
+                        @lang('viewTask.current')
                     </div>
 
                     <div class="card-body">
@@ -49,7 +49,7 @@
                                 <!-- Task Delete Button -->
                                 <td>
                                     <button type="submit" class="btn btn-danger">
-                                        <i class="fa fa-btn fa-trash"></i> {{ trans('action.delete') }}
+                                        <i class="fa fa-btn fa-trash"></i> @lang('action.delete')
                                     </button>
                                 </td>
                             </tr>
@@ -60,7 +60,7 @@
                                 <!-- Task Delete Button -->
                                 <td>
                                     <button type="submit" class="btn btn-danger">
-                                        <i class="fa fa-btn fa-trash"></i> {{ trans('action.delete') }}
+                                        <i class="fa fa-btn fa-trash"></i> @lang('action.delete')
                                     </button>
                                 </td>
                             </tr>
@@ -71,7 +71,7 @@
                                 <!-- Task Delete Button -->
                                 <td>
                                     <button type="submit" class="btn btn-danger ">
-                                        <i class="fa fa-btn fa-trash"></i> {{ trans('action.delete') }}
+                                        <i class="fa fa-btn fa-trash"></i> @lang('action.delete')
                                     </button>
                                 </td>
                             </tr>
