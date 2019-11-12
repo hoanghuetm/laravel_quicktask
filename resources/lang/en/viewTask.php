@@ -14,4 +14,5 @@ return [
     'task' => 'Task',
     'current' => 'Current Task',
     'new' => 'New Task',
+    'name' => 'Name Task',
 ];

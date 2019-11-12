@@ -19269,14 +19269,19 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/layouts.js":
-/*!*********************************!*\
-  !*** ./resources/js/layouts.js ***!
-  \*********************************/
+/***/ "./resources/js/logout.js":
+/*!********************************!*\
+  !*** ./resources/js/logout.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/hoanghue/Documents/laravel_quicktask/resources/js/layouts.js'");
+$(document).ready(function () {
+  $("#demo").click(function (event) {
+    event.preventDefault();
+    $("#logout-form").submit();
+  });
+});
 
 /***/ }),
 
@@ -19292,14 +19297,14 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/js/layouts.js ./resources/sass/app.scss ***!
-  \***************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/js/logout.js ./resources/sass/app.scss ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/hoanghue/Documents/laravel_quicktask/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/hoanghue/Documents/laravel_quicktask/resources/js/layouts.js */"./resources/js/layouts.js");
+__webpack_require__(/*! /home/hoanghue/Documents/laravel_quicktask/resources/js/logout.js */"./resources/js/logout.js");
 module.exports = __webpack_require__(/*! /home/hoanghue/Documents/laravel_quicktask/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
