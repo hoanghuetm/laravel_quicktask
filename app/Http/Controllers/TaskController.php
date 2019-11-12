@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\TaskRequest;
+use App\Task;
 
 class TaskController extends Controller
 {
@@ -11,9 +13,15 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    protected $tasks;
+
+    public function index(Request $request)
     {
-        //
+        $tasks = $request->user()->tasks()->get();
+
+        return view('task.index', [
+            'tasks' => $tasks,
+        ]);
     }
 
     /**
@@ -32,11 +40,15 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
 
+    public function store(TaskRequest $request)
+    {
+        $request->user()->tasks()->create([
+            'name' => $request->name,
+        ]);
+
+        return redirect('/task');
+    }
     /**
      * Display the specified resource.
      *

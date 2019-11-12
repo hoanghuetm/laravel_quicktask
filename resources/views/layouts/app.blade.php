@@ -4,16 +4,16 @@
     <title>@lang('Laravel')</title>
 
     <!-- CSS And JavaScript -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/js/app.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <link href ="bower_components/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href ="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="bower_components/fontawesome/css/brands.css" rel="stylesheet">
-    <link href="bower_components/fontawesome/css/solid.css" rel="stylesheet">
-    <link href="css/style.css">
+{{--    <script src="bower_components/jquery/dist/jquery.min.js"></script>--}}
+    <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.bundle.js')}}"></script>
+    <link href ="{{asset('bower_components/bootstrap/dist/css/bootstrap-grid.min.css')}}" rel="stylesheet">
+    <link href ="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('bower_components/fontawesome/css/fontawesome.css')}}" rel="stylesheet">
+    <link href="{{asset('bower_components/fontawesome/css/brands.css')}}" rel="stylesheet">
+    <link href="{{asset('bower_components/fontawesome/css/solid.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}">
 </head>
 
 <body>
@@ -40,9 +40,9 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" id="demo" href="{{ route('logout') }}">
+                            <div class="dropdown-item" id="demo">
                                 @lang('auth.logout')
-                            </a>
+                            </div>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" >
                                 @csrf
@@ -56,5 +56,6 @@
 </div>
 
 @yield('content')
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
