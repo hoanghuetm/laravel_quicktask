@@ -13,14 +13,13 @@
       <change afterPath="$PROJECT_DIR$/../blog/.idea/watcherTasks.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../blog/bower.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../quickstart/.idea/quickstart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bowerrc" beforeDir="false" afterPath="$PROJECT_DIR$/.bowerrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel_quicktask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_quicktask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/viewTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/viewTask.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/vi/viewTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/viewTask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/task/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/task/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +127,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TAycrfb2BWQ4Qy8KF4V2qjC2wf" />
@@ -137,12 +137,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/resources/css" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/lang" />
       <recent name="$PROJECT_DIR$/resources/lang/en" />
     </key>
@@ -179,6 +182,15 @@
       <workItem from="1572919968173" duration="16000" />
       <workItem from="1572922047821" duration="5500000" />
       <workItem from="1573199368557" duration="783000" />
+      <workItem from="1573306914016" duration="118000" />
+      <workItem from="1573318432443" duration="47000" />
+      <workItem from="1573434258593" duration="3488000" />
+      <workItem from="1573437764020" duration="8167000" />
+      <workItem from="1573446034938" duration="1309000" />
+      <workItem from="1573465853145" duration="727000" />
+      <workItem from="1573520154735" duration="893000" />
+      <workItem from="1573521059798" duration="857000" />
+      <workItem from="1573522011120" duration="3065000" />
     </task>
     <servers />
   </component>
