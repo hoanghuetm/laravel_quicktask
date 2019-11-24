@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Repositories\TaskRepository;
 use App\Http\Requests\TaskRequest;
 use App\Task;
 
@@ -89,8 +90,10 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Task $task)
     {
-        //
+        $this->authorize('delete', $task);
+        $task->delete();
+        return redirect('/task');
     }
 }
